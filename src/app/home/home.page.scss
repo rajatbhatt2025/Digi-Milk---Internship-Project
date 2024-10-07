@@ -1,0 +1,198 @@
+/* Basic Styles */
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disable scrolling */
+}
+
+/* Login Container */
+/* Replace the existing background-image property with this */
+.login-container {
+  display: flex;
+  justify-content: center;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-image: url('../../assets/images/dairy_milk.png'); /* Update the path */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.login-image {
+  max-width: 100%; /* Adjust as necessary */
+  height: 8pc; /* Maintain aspect ratio */
+  
+}
+
+
+/* Login Box */
+.login-box {
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  height: 92vh;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.71); /* Slight transparency for background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative; /* Positioning context */
+}
+
+/* Other styles remain unchanged */
+
+
+.container {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button, ion-button {
+  background-color: transparent; /* Transparent background */
+  color: rgb(255, 255, 255); /* Black text */
+  border: none; /* Removed the border */
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Ensure buttons are full width */
+}
+
+/* Alt login buttons (Google, Facebook, Fingerprint) */
+.alt-login-btn {
+  background-color: transparent; /* Transparent background */
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border: none; /* Removed the border */
+}
+
+.alt-login-btn img.button-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 1rem;
+}
+
+/* Special styling for Google and Facebook buttons */
+.google-btn, .facebook-btn {
+  background-color: transparent; /* Transparent background for Google and Facebook buttons */
+  color: rgb(255, 255, 255) !important;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none; /* Removed the border */
+  border-radius: 5px;
+}
+
+/* Forms and Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+label, a {
+  font-size: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Image */
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5pc;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button, .alt-login-btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  input[type="text"], input[type="password"] {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  form {
+    max-width: 300px;
+  }
+
+  .alt-login-btn img.button-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button, .alt-login-btn {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  input[type="text"], input[type="password"] {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .alt-login-btn img.button-icon {
+    height: 18px;
+    width: 18px;
+  }
+}
+

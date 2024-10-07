@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-badge color="danger">5</ion-badge>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="moon-outline"></ion-icon>
+      </ion-button>
+      <ion-avatar>
+        <img src="assets/avatar/admin.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="dashboard-grid">
+    <ion-card class="dashboard-card farmer-card">
+      <ion-card-header>
+        <ion-card-title>Farmer</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>132</p>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Farmer Milk</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>563 Litre</p>
+        <p>₹ 130000 Price</p>
+        <ion-icon name="cash-outline"></ion-icon>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Society</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>329</p>
+        <ion-icon name="people-outline"></ion-icon>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Society Milk</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>0 Litre</p>
+        <p>₹ 0 Price</p>
+        <ion-icon name="cash-outline"></ion-icon>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Avg Farmer</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>SNF = </p>
+        <p>FAT = </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Avg Society</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>SNF = </p>
+        <p>FAT = </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="dashboard-card action-card">
+      <ion-icon name="add-circle-outline" size="large"></ion-icon>
+      <ion-button expand="block" fill="outline">Add Milk Collection</ion-button>
+    </ion-card>
+
+    <ion-card class="dashboard-card action-card">
+      <ion-icon name="cart-outline" size="large"></ion-icon>
+      <ion-button expand="block" fill="outline">Request Order</ion-button>
+    </ion-card>
+
+    <ion-card class="dashboard-card action-card">
+      <ion-icon name="bar-chart-outline" size="large"></ion-icon>
+      <ion-button expand="block" fill="outline">Collection Data</ion-button>
+    </ion-card>
+
+    <ion-card class="dashboard-card action-card">
+      <ion-icon name="wallet-outline" size="large"></ion-icon>
+      <ion-button expand="block" fill="outline">Payment Data</ion-button>
+    </ion-card>
+  </div>
+</ion-content>
